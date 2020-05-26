@@ -1,0 +1,13 @@
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Start Page</title>
+</head>
+<body>
+<a th:href="@{/nextpage}">Go to next page</a>
+
+<div th:object="${myPuppy}">
+    Puppy named: <p th:text="*{name ?: 'null'}">NAME</p>
+    Slippers chewed: <p th:text="*{slippersChewed}">SLIPPERS CHEWED</p>
+</div>
+</body>
+</html>

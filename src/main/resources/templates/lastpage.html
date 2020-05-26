@@ -1,0 +1,14 @@
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Last Page</title>
+</head>
+<body>
+<a th:href="@{/}">Start over</a>
+<div th:object="${myPuppy}">
+    Puppy named: <p th:text="*{name ?: 'null'}">NAME</p>
+    Slippers chewed: <p th:text="*{slippersChewed}">SLIPPERS CHEWED</p>
+</div>
+
+<a th:href="@{/endsession}">End Session</a>
+</body>
+</html>
